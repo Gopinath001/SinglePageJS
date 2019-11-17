@@ -32,13 +32,15 @@ all commands from the server are in queue, they are executed in order
 
 ***below is how the ajax request appears ,configure it to your liking***
 
-!["network"]("docs/network.png")
+![''](/docs/network.png)
+
+***the response is decoded automatically and processed***
 
 ### configurations
 
 ***change the config in the interface***
 
-!["network"]("docs/configs.png")
+![''](/docs/configs.png)
 
 ### using gulp to combine js
 
@@ -57,11 +59,11 @@ gulp js-minify
 
 * * *
 
-## > See the demo src inside Demo folder, check the  [ live demo here](https://unmaterial-zones.000webhostapp.com/singlePageJS/)
+#### > See the demo src inside Demo folder, check the  [ live demo here](https://unmaterial-zones.000webhostapp.com/singlePageJS/)
 
 * * *
 
-### dependencies
+##### dependencies
 
 * jQuery
 
