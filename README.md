@@ -55,13 +55,13 @@ all commands from the server are in queue, they are executed in order
 
 ### using gulp to combine js
 
-all the js files are put seperately based on its logic, use gulp to generate a combined version of the script.
+all the js files are put separately based on its logic, use gulp to generate a combined version of the script.
 
 ```bash
 
 npm install gulp
 
-npm install gulp=concat
+npm install gulp-concat
 
 gulp js-minify
 
