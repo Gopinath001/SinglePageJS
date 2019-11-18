@@ -27,7 +27,7 @@
 
 _two scripts are present:_
 
-client side script & server side, client side script is generated and attached to the page during inital load,
+client side script & server side, client side script is generated and attached to the page during initial load,
 after that is done, all other interactions are done 
 with server side script.
 
