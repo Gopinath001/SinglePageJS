@@ -28,8 +28,16 @@ function processResponse(response){
         } else if(actionJS == "call") {
             process((function (item) {
                 call = []; args = [];
-                args.push(item[0][1][1]);call.push(item[0][1][0]);
-                call.push("(");call.push("args[0]");call.push(");");
+                call.push(item[0][1][0]);
+                (item[0][1]).shift();call.push("(");
+                if(item[0][1].length == 0){
+                    call.push(");");
+                    return call.join('');
+                } for(ai=0;ai<(item[0][1][0]).length;ai++){
+                    args.push(item[0][1][0][ai]);
+                    call.push("args["+ai+"],");
+                } call.push(");"); 
+                return call.join('');
                 return call.join('');
               })(responseItem));
         } else if(actionJS == "assign"){

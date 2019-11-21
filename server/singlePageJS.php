@@ -34,7 +34,10 @@ class SinglePageJS{
     }
 
 
+    /* support multiple param calling support */
     public function call($fn, $param){
+        $param = func_get_args(); 
+        $fn = array_shift($param);
         $this->response->addCall($fn, $param);
     }
 
