@@ -1,6 +1,6 @@
 <?php
 
-require_once("utilis.php");
+require_once(__DIR__."/../abstract/utilis.php");
 require_once(__DIR__."/../interfaces/response.php");
 
 class response extends utilis implements Iresponse {
@@ -26,7 +26,7 @@ class response extends utilis implements Iresponse {
 
 
     private function getPageScript(){
-        return $this->getConfig() . Iresponse::singlePageJsSrc . Iresponse::wrapper;        
+        return $this->getConfig() . Iresponse::singlePageJsSrc;        
     }
 
     private function getConfig(){

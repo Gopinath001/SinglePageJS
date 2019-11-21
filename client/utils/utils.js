@@ -1,3 +1,7 @@
+serverCall = function(endPoint, args) {
+  return singlePageJsRequest(endPoint, args );
+  };
+
 //backwards compatibality
 if (!Object.entries)
   Object.entries = function( obj ){

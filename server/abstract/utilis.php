@@ -1,6 +1,6 @@
 <?php
 
-class utilis{
+abstract class utilis{
     private $response = [];
     private $funName = '';
     private $args = [];
