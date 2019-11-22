@@ -6,7 +6,11 @@ abstract class utilis{
     private $args = [];
 
     public function addScript($jsScript){
-        $this->response[]= ['js'=> $jsScript . ";"];
+        $jsScript = $jsScript . ";";
+        $jsonEncode = json_encode($jsScript,JSON_UNESCAPED_SLASHES|
+            JSON_UNESCAPED_UNICODE);
+        /* add sha1 hash of the script to verify the integrity of script */
+        $this->response[]= ['js'=> $jsScript,'verify'=> sha1($jsonEncode)];
     }
 
     public function addCall($fn, $args){

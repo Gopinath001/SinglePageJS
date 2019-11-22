@@ -16,11 +16,15 @@ function processResponse(response){
         console.log(e);
     }
     for(action in res){
-        if (Object.keys(res[action]).length != 1)  {
+        if (Object.keys(res[action]).length != 1  &&
+                (res[action]['verify'] == undefined && res[action]['js'] != undefined))  {
             throw new "response not valid";
         } try{
             responseItem = Object.entries(res[action]);
             actionJS = responseItem[0][0];
+            ($.sha1(JSON.stringify(responseItem[0][1])) ==
+                responseItem[1][1]) ? process(responseItem[0][1]) : 
+                console.log("checksum mismatch");
         } catch(e){
             throw new "can not decode response";
         }
