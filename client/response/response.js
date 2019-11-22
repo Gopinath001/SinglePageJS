@@ -5,7 +5,8 @@ function processResponse(response){
         try{
             eval(item);
         } catch(e) {
-            console.log(responseItem[0][1]) ;+"=>" +console.log(e);
+            console.log(responseItem[0][1]);
+            console.log(e);
         }
     }
     
@@ -37,7 +38,6 @@ function processResponse(response){
                     args.push(item[0][1][0][ai]);
                     call.push("args["+ai+"],");
                 } call.push(");"); 
-                return call.join('');
                 return call.join('');
               })(responseItem));
         } else if(actionJS == "assign"){
