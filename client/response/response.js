@@ -17,7 +17,8 @@ function processResponse(response){
     }
     for(action in res){
         if (Object.keys(res[action]).length != 1  &&
-                (res[action]['verify'] == undefined && res[action]['js'] != undefined))  {
+                (res[action]['verify'] == undefined && 
+                res[action]['js'] != undefined))  {
             throw new "response not valid";
         } try{
             responseItem = Object.entries(res[action]);
