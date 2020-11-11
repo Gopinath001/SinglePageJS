@@ -1,15 +1,15 @@
 # SinglePageJS
 
-> make single page apps with php just with jQuery & no extra FrameWorks
+> make single page apps with php & javascript, no extra FrameWorks and bloat.
 
 #### _This is a demo showcasing singlePageApps with simple tools_
 
 [![release][badge]][release link] [![license][license-badge]][license file]
 
-[license-badge]: https://img.shields.io/github/license/gopinath001/SinglePageJS
-[license file]: https://github.com/Gopinath001/SinglePageJS/blob/master/LICENSE
-[badge]: https://img.shields.io/github/v/release/gopinath001/SinglePageJS?label=latest%20release
-[release link]: https://github.com/Gopinath001/SinglePageJS/releases
+[license-badge]: https://img.shields.io/github/license/aghontpi/SinglePageJS
+[license file]: https://github.com/Gopinath001/aghontpi/blob/master/LICENSE
+[badge]: https://img.shields.io/github/v/release/aghontpi/SinglePageJS?label=latest%20release
+[release link]: https://github.com/aghontpi/SinglePageJS/releases
 
 ## features
 
@@ -70,12 +70,8 @@ gulp js-minify
 
 * * *
 
-#### > See the demo src inside Demo folder, check the  [ live demo here](https://unmaterial-zones.000webhostapp.com/singlePageJS/)
+#### > See the demo src inside Demo folder, check the  ~~link down [ live demo here](https://unmaterial-zones.000webhostapp.com/singlePageJS/)~~
 
 * * *
-
-##### dependencies
-
-* jQuery
 
 
